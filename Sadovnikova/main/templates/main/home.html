@@ -1,5 +1,37 @@
 {% extends 'main/layout.html' %}
-
+{% load static %}
 {% block content %}
-  <h1>Home</h1>
+     <div class="container-home">
+           <strong>
+               ФИТНЕС - ОБУЧЕНИЕ ВЕРОНИКИ САДОВНИКОВОЙ. <br>
+               ПЕРСОНАЛЬНОЕ ОБУЧЕНИЕ.</strong>
+     </div>
+<br><br><br><br>
+<div class="slides">
+        <img src="{% static 'main/images/21091197.sae1hgiviv.W710.jpg' %}" class="block" width="710" height="232">
+        <img src="{% static 'main/images/19529309.bsjc28kp0d.W710.jpg' %}" alt=""  width="710" height="232">
+        <img src="{% static 'main/images/19534271.p41f8ro9rh.W710.jpg' %}" alt="" width="710" height="232">
+        <img src="{% static 'main/images/19704824.j8h913z62z.W710.jpg' %}" alt="" width="710" height="232">
+    </div>
+
+<br>
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<div class="content">
+        <strong>Здравствуйте, меня зовут Вероника.</strong><br><br>
+        Менеджмент и маркетинг спорта (MBA), менеджмент, <br>
+        фитнес-обучение, коучинг. Формальное и неформальное образование <br>
+        <button style="margin-top: 10px; margin-right: 10px" type="button" class="btn btn-info">FITNESS</button>
+        <button style="margin-top: 10px;margin-left: 17px; margin-right: 25px;" type="button" class="btn btn-info">PILATES</button>
+        <button style="margin-top: 10px;" type="button" class="btn btn-info">BMS</button>
+    </div>
+    <div class="phone">
+        <a class="bi bi-telephone-fill" href="" ></a>
+    </div>
+<script src="{% static 'main/js/main.js' %}" class="btnRight"></script>
 {% endblock content %}
